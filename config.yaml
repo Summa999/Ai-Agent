@@ -1,0 +1,303 @@
+agent:
+  adaptation_rate: 0.01
+  confidence_threshold: 0.65
+  decision_logging: true
+  detailed_analysis: true
+  learning_enabled: true
+  learning_tracking: true
+  thinking_frequency: 30
+  verbose_reasoning: true
+ai:
+  adaptive_learning: true
+  market_memory_days: 30
+  max_tokens: 2000
+  model: claude-sonnet-4-20250514
+  pattern_recognition: true
+  reasoning_depth: detailed
+  temperature: 0.3
+alerts:
+  desktop_notifications: true
+  email_enabled: false
+  email_password: ''
+  email_recipients: []
+  email_smtp_port: 587
+  email_smtp_server: ''
+  email_username: ''
+  sound_alerts: false
+  telegram_alerts: true
+  telegram_daily_summary: true
+  telegram_error_notifications: true
+  telegram_trade_notifications: true
+analysis:
+  correlation_analysis: true
+  fibonacci_levels: true
+  news_impact: true
+  sentiment_analysis: true
+  support_resistance: true
+  trend_analysis: true
+  volatility_analysis: true
+  volume_analysis: true
+backtest:
+  commission: 0.0002
+  data_source: binance
+  enabled: false
+  end_date: '2024-12-31'
+  initial_balance: 10000
+  slippage: 0.0001
+  start_date: '2024-01-01'
+data:
+  data_quality_check: true
+  historical_data_days: 365
+  missing_data_handling: interpolate
+  outlier_detection: true
+  real_time_data: true
+defaults:
+  default_confidence_threshold: 65.0
+  default_lot_size: 0.01
+  default_max_spread: 3.0
+  default_min_equity: 1000
+  default_order_timeout: 30
+  default_position_hold_time: 3600
+  default_retry_attempts: 3
+  default_risk_percent: 1.0
+  default_stop_loss_pips: 50
+  default_take_profit_pips: 100
+  default_timeframe: M15
+display:
+  real_time_updates: true
+  show_indicators: true
+  show_market_data: true
+  show_opportunities: true
+emergency:
+  auto_disable_on_drawdown: true
+  emergency_contacts: []
+  emergency_stop_loss: 15.0
+  max_consecutive_losses: 5
+indicators:
+  atr:
+    period: 14
+    timeframes:
+    - 15m
+    - 1h
+    - 4h
+  bollinger_bands:
+    period: 20
+    std_dev: 2.0
+    timeframes:
+    - 15m
+    - 1h
+  ema:
+    periods:
+    - 12
+    - 26
+    - 50
+    timeframes:
+    - 15m
+    - 1h
+  macd:
+    fast_period: 12
+    signal_period: 9
+    slow_period: 26
+    timeframes:
+    - 15m
+    - 1h
+    - 4h
+  rsi:
+    overbought: 70
+    oversold: 30
+    period: 14
+    timeframes:
+    - 5m
+    - 15m
+    - 1h
+  sma:
+    periods:
+    - 20
+    - 50
+    - 200
+    timeframes:
+    - 1h
+    - 4h
+  stochastic:
+    d_period: 3
+    k_period: 14
+    smooth_k: 3
+    timeframes:
+    - 15m
+    - 1h
+logging:
+  console_colors: true
+  file: logs/ai_agent.log
+  level: DEBUG
+  show_analysis: true
+  show_learning: true
+  show_reasoning: true
+maintenance:
+  auto_restart_hours: 24
+  backup_config: true
+  log_cleanup_days: 30
+  model_retrain_frequency: weekly
+markets:
+  crypto:
+    api_key: AQ2sjeaCEx1S5H73XJICXDEhO9lSrVnrsDerCWAN6ZBkXOlLS1JZM3RttJsQevaK
+    api_secret: B8g6P5sCVE79fIbvsK7EgN0qMjebJDkCRIYTET2jkIxLCamxtGUSWREyTG3dUfSP
+    enabled: true
+    exchange: binance
+    symbols:
+    - BTC/USDT
+    - ETH/USDT
+    - BNB/USDT
+    - ADA/USDT
+    - SOL/USDT
+    - DOT/USDT
+    testnet: true
+  forex:
+    enabled: false
+    symbols: []
+models:
+  save_path: models/
+mt5:
+  account: 333371208
+  enabled: false
+  magic_number: 123456
+  password: Summa@12345
+  server: XMGlobal-MT5 9
+  symbols: []
+  terminal_path: null
+news:
+  avoid_trading_minutes_after: 30
+  avoid_trading_minutes_before: 15
+  enabled: true
+  high_impact_only: true
+  news_sources:
+  - forexfactory
+  - investing
+notifications:
+  daily_summary: true
+  error_notifications: true
+  shutdown_notification: true
+  startup_notification: true
+  trade_notifications: true
+  weekly_report: true
+orders:
+  max_slippage: 0.1
+  order_retry_count: 3
+  order_timeout: 30
+  partial_fill_handling: accept
+  use_limit_orders: true
+  use_market_orders: false
+performance:
+  backup_frequency: daily
+  benchmark_symbol: BTC/USDT
+  calculate_max_drawdown: true
+  calculate_sharpe_ratio: true
+  generate_reports: true
+  max_history_days: 90
+  report_frequency: daily
+  save_trades_history: true
+  track_metrics: true
+positions:
+  auto_close_on_weekend: false
+  correlation_limit: 0.8
+  hedge_positions: false
+  max_open_positions: 5
+  position_timeout: 86400
+risk:
+  max_correlation: 0.7
+  max_daily_loss: 0.1
+  max_drawdown: 10.0
+  max_portfolio_risk: 0.06
+  max_position_risk: 0.02
+  stop_loss_percentage: 2.0
+  take_profit_percentage: 4.0
+  trailing_stop: true
+  trailing_stop_distance: 1.5
+security:
+  api_rate_limit: 10
+  audit_logging: true
+  encryption_enabled: false
+  ip_whitelist: []
+  max_api_calls_per_minute: 60
+sessions:
+  crypto_active:
+    active_pairs:
+    - BTC/USDT
+    - ETH/USDT
+    - BNB/USDT
+    end: '23:59'
+    start: 00:00
+    timezone: UTC
+  london:
+    active_pairs:
+    - GBPUSD
+    - EURUSD
+    - GBPJPY
+    end: '16:00'
+    start: 08:00
+    timezone: Europe/London
+  new_york:
+    active_pairs:
+    - EURUSD
+    - GBPUSD
+    - USDJPY
+    end: '21:00'
+    start: '13:00'
+    timezone: America/New_York
+  tokyo:
+    active_pairs:
+    - USDJPY
+    - AUDJPY
+    - EURJPY
+    end: 08:00
+    start: 00:00
+    timezone: Asia/Tokyo
+symbols:
+- BTC/USDT
+- ETH/USDT
+- BNB/USDT
+- ADA/USDT
+- SOL/USDT
+system:
+  currency_format: $%.2f
+  decimal_places: 8
+  locale: en_US
+  thousand_separator: ','
+  timezone: UTC
+telegram:
+  bot_token: 7828760596:AAEUbAkIzJ2XSOxP1UltboW5xV-ZzHYzVtA
+  chat_id: '5638942073'
+  enabled: true
+timeframes:
+  crypto:
+  - 1m
+  - 5m
+  - 15m
+  - 1h
+  - 4h
+  forex:
+  - M5
+  - M15
+  - H1
+  - H4
+trading:
+  default_risk_percent: 1.0
+  default_stop_loss: 2.0
+  default_take_profit: 4.0
+  enabled: false
+  entry_timeout: 300
+  lot_size: 0.001
+  max_daily_trades: 20
+  max_positions: 5
+  max_spread: 0.1
+  min_confidence_score: 65.0
+  min_equity: 100
+  partial_fills_allowed: true
+  position_sizing_method: fixed_risk
+  risk_per_trade: 0.01
+  slippage_tolerance: 0.5
+  symbols:
+  - EURUSD
+  - GBPUSD
+  - USDJPY
+  - AUDUSD
+  use_sl_tp: true

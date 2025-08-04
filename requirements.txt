@@ -1,0 +1,4 @@
+# Add these new requirements
+ccxt>=4.0.0
+python-binance>=1.0.17
+websocket-client>=1.6.0
